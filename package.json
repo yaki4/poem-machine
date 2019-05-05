@@ -20,6 +20,7 @@
     "nuxt": "^2.4.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "push-dir": "^0.4.1",
     "typeit": "^6.0.2",
     "vue-terminal": "^1.1.0",
     "vue-terminal-ui": "^0.1.5",
