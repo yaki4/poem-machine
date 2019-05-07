@@ -1,7 +1,14 @@
 {
-    "titre": "Le « où là le ça est ici » aka le Cabecnaqueda",
-    "auteur": "Josée Lepage",
-    "from": "CÉGEP DE SOREL-TRACY",
+    "start": [
+        "",
+        "****************************************************",
+        "|                                                  |",
+        "|  Le « où là le ça est ici » aka le Cabecnaqueda  |",
+        "|                  Josée Lepage                    |",
+        "|              CÉGEP DE SOREL-TRACY                |",
+        "|                                                  |",
+        "****************************************************"
+    ],
     "poem": [
         "",
         "144 000 chemins de traverse",

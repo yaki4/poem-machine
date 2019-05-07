@@ -1,7 +1,14 @@
 {
-    "titre": "Erreur 404",
-    "auteur": "Alyson Gagnon",
-    "from": "CÉGEP DE RIMOUSKI",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                Erreur 404                     |",
+        "|               Alyson Gagnon                   |",
+        "|             CÉGEP DE RIMOUSKI                 |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "Glace noire sournoise,",

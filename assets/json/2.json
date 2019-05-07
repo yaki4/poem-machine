@@ -1,7 +1,14 @@
 {
-    "titre": "Vers d'eau",
-    "auteur": "Alicia Truchon",
-    "from": "COLLÈGE JEAN-DE-BRÉBEUF",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                Vers d'eau                     |",
+        "|               Alicia Truchon                  |",
+        "|           COLLÈGE JEAN-DE-BRÉBEUF             |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": ["",
         "Un premier jet",
         "D’idées troubles",

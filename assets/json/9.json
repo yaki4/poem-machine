@@ -1,7 +1,14 @@
 {
-    "titre": "L'artiste ",
-    "auteur": "Marthe Jénécia Levassath",
-    "from": "CÉGEP DE SAINT-HYACINTHE",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                  L'artiste                    |",
+        "|            Marthe Jénécia Levassath           |",
+        "|            CÉGEP DE SAINT-HYACINTHE            |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "J’écris à l’encre de mes veines",

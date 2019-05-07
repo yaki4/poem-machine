@@ -1,7 +1,14 @@
 {
-    "titre": "Code rouge",
-    "auteur": "Stéphanie Orellana",
-    "from": "CÉGEP SAINT-JEAN-SUR-RICHELIEU",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                 Code rouge                    |",
+        "|              Stéphanie Orellana               |",
+        "|        CÉGEP SAINT-JEAN-SUR-RICHELIEU         |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "à cette heure-ci d’habitude on voit les autobus arriver",

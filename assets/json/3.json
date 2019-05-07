@@ -1,7 +1,14 @@
 {
-    "titre": "Creuser un trou",
-    "auteur": "Marisol Vachon",
-    "from": "COLLÈGE DE MAISONNEUVE",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                Creuser un trou                |",
+        "|                 Marisol Vachon                |",
+        "|              COLLÈGE DE MAISONNEUVE           |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "avaler les roches",

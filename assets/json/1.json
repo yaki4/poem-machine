@@ -1,7 +1,14 @@
 {
-    "titre": "À toi mon frère",
-    "auteur": "Sherilyne Ketsia Avomo Mvolo",
-    "from": "COLLÈGE UNIVERSEL",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                À toi mon frère                |",
+        "|          Sherilyne Ketsia Avomo Mvolo         |",
+        "|                COLLÈGE UNIVERSEL              |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "À toi mon frère",
@@ -22,6 +29,7 @@
         "J’ai un coeur",
         "Tu as un coeur",
         "Nous avons un coeur",
-        "Mais pourquoi tant de haine, mon frère ? Mon frère !"
+        "Mais pourquoi tant de haine, mon frère ? Mon frère !",
+        ""
     ]
 }

@@ -1,7 +1,14 @@
 {
-    "titre": "Automatique I",
-    "auteur": "Charlie Rivard",
-    "from": "CÉGEP DE SAINT-LAURENT",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                Automatique  I                 |",
+        "|                Charlie Rivard                 |",
+        "|             CÉGEP DE SAINT-LAURENT            |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "La noblesse des défricheurs, des éclatés",

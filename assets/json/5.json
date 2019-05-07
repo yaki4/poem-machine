@@ -1,7 +1,14 @@
 {
-    "titre": "Glace plastifiée",
-    "auteur": "Valérie Quirion",
-    "from": "CÉGEP DE THETFORD",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|               Glace plastifiée                |",
+        "|                Valérie Quirion                |",
+        "|               CÉGEP DE THETFORD               |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "La neige tombait",

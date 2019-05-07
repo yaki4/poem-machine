@@ -1,7 +1,14 @@
 {
-    "titre": "Acrostiche",
-    "auteur": "Pascal Tremblay",
-    "from": "CÉGEP MARIE-VICTORIN",
+    "start": [
+        "",
+        "************************************************",
+        "|                                               |",
+        "|                Acrostiche                     |",
+        "|              Pascal Tremblay                  |",
+        "|            CÉGEP MARIE-VICTORIN               |",
+        "|                                               |",
+        "************************************************"
+    ],
     "poem": [
         "",
         "Ah, l’acrostiche",
