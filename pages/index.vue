@@ -135,7 +135,7 @@ export default {
       vue-typer(v-if='showLine(index)', v-for='(elem, index) in selectedPoem.poem', :key="index + '-other'", @completed='onComplete', id='type', :text='elem', :erase-on-complete='false', :repeat='0', caret-animation='blink')
     template(v-if='poemFinished && !showRebootAnim')
       div.continue(@keyup='continuePoem', tabindex="0", id='continue')
-        vue-typer.typernext(text='appuyer sur une touche pour redémarrer le programme', :erase-on-complete='false', :repeat='0', caret-animation='blink', @completed='onCompleteFinal')
+        vue-typer.typernext(text='appuyer sur une touche pour redémarrer le programme...', :erase-on-complete='false', :repeat='0', caret-animation='blink', @completed='onCompleteFinal')
     template(v-if='showRebootAnim')
       div.reboot
         reboot(@next='rebootFinished')
