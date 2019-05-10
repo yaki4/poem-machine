@@ -381,7 +381,7 @@ export default {
   var currentIndex = 3
 
   setTimeout(function() {
-    AsciiMorph.morph(asciis[2])
+    AsciiMorph.morph(asciis[Math.floor(Math.random() * 6) + 1])
     window.scrollTo(0,(document.querySelector(".index").scrollHeight + 60))
   }, 1000)
   
@@ -418,7 +418,7 @@ pre.ascii-element(id='asciinim')
   position: absolute;
   /* left: 50%; */
   /* top: 50%; */
-  margin-top: -300px;
+  /* margin-top: -100px; */
   /* margin-left: -200px; */
   font-family: "Courier New", Courier, monospace;
   color: #fff;

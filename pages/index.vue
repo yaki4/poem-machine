@@ -11,7 +11,7 @@ import poem7 from '@/assets/json/7.json'
 import poem8 from '@/assets/json/8.json'
 import poem9 from '@/assets/json/9.json'
 import poem10 from '@/assets/json/10.json'
-import test from '@/components/test'
+import test from '@/components/testanim'
 import reboot from '@/components/reboot'
 export default {
   components: {
@@ -53,7 +53,7 @@ export default {
       const elem = this.listCmd.find( elem => { return elem === data.text })
       if (data.text === 'raconte') {
         this.notShowingPoem = false
-        this.listCharStart.push(1)
+        this.listChar.push(1)
         this.selectedPoem = this.listEntry[Math.floor(Math.random() * 10) + 0]
       } else if (data.text === 'aide') {
         resolve("10 poèmes sont actuellement stockés dans ma base de données. Entrez poeme-X pour lire l'un des 10 poèmes")
@@ -61,7 +61,7 @@ export default {
         if (elem.includes('poeme-')) {
           let temp = parseInt(elem[elem.length - 1])
           this.notShowingPoem = false
-          this.listCharStart.push(1)
+          this.listChar.push(1)
           this.selectedPoem = this.listEntry[temp]
         }
       } else {
@@ -70,7 +70,6 @@ export default {
     },
     showLine(index, elem) {
       if (elem) {
-        console.log('ICI')
         if (this.listCharStart.find( elem => { return elem === index })) {
           return true
         } else {
@@ -88,14 +87,15 @@ export default {
       window.scrollTo(0,(document.querySelector(".index").scrollHeight + 60))
       if (elem === 0) {
         if (this.listCharStart[this.listCharStart.length - 1] + 1 >= this.selectedPoem.start.length) {
-          this.poemIntroFinished = true
-          this.listChar.push(1)
+          this.poemFinished = true
+          
         } else {
           this.listCharStart.push(this.listCharStart[this.listCharStart.length - 1] + 1)
         }
       } else {
         if (this.listChar[this.listChar.length -1] + 1 >= this.selectedPoem.poem.length) {
-          this.poemFinished = true
+          this.poemIntroFinished = true
+          this.listCharStart.push(1)
         } else {
           this.listChar.push(this.listChar[this.listChar.length -1] + 1)
         }
@@ -128,11 +128,11 @@ export default {
 .index(ref='command')
   div.startcommand
     test.introstyle(id='introElem')
-    VueTerminal.command(v-if='notShowingPoem && !showRebootAnim && !showIntro', intro='***********Poème machine v0.5*************', console-sign='$', height='500px', allow-arbitrary, @command='onCommand')
-    template(v-if='!notShowingPoem && !showRebootAnim')   
-      vue-typer(v-if='showLine(index, 1)', v-for='(elem, index) in selectedPoem.start', :key='index', @completed='onComplete(0)', id='type', :text='elem', :erase-on-complete='false', :repeat='0', caret-animation='blink')
-    template(v-if='!notShowingPoem && poemIntroFinished && !showRebootAnim')
+    VueTerminal.command(v-if='notShowingPoem && !showRebootAnim && !showIntro', intro="", console-sign='$', height='500px', allow-arbitrary, @command='onCommand')
+    template(v-if='!notShowingPoem && !showRebootAnim')
       vue-typer(v-if='showLine(index)', v-for='(elem, index) in selectedPoem.poem', :key="index + '-other'", @completed='onComplete', id='type', :text='elem', :erase-on-complete='false', :repeat='0', caret-animation='blink')
+    template(v-if='!notShowingPoem && !showRebootAnim && poemIntroFinished')   
+      vue-typer(v-if='showLine(index, 1)', v-for='(elem, index) in selectedPoem.start', :key='index', @completed='onComplete(0)', id='type', :text='elem', :erase-on-complete='false', :repeat='0', caret-animation='blink')
     template(v-if='poemFinished && !showRebootAnim')
       div.continue(@keyup='continuePoem', tabindex="0", id='continue')
         vue-typer.typernext(text='appuyer sur une touche pour redémarrer le programme...', :erase-on-complete='false', :repeat='0', caret-animation='blink', @completed='onCompleteFinal')
@@ -148,7 +148,7 @@ export default {
   position: absolute;
   background: #0000FF !important;
   left: 0 !important;
-  top: 1000px !important;
+  top: 300px !important;
   width: 100vw !important;
 }
 #introElem{
@@ -162,8 +162,11 @@ export default {
   animation: slide 0.1s ease 5s forwards;
 }
 @-webkit-keyframes slide{
-  from {height: 0;}
-  to {height: 790px;}
+  0% {height: 0;}
+  25% {height: 75px;}
+  50% {height: 150px;}
+  75% {height: 250;}
+  100% {height: 300px;}
 }
 .continue{
   height: 60px;
